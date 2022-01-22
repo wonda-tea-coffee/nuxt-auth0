@@ -1,11 +1,11 @@
 <template>
-  <p>Signing in ...</p>
+  <p>Signing out...</p>
 </template>
 
 <script>
 export default {
   mounted() {
-    this.$auth0.setTokenByQuery()
+    this.$auth0.unsetToken()
     this.$router.replace('/')
   }
 }
