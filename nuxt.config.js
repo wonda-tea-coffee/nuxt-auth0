@@ -35,6 +35,11 @@ module.exports = {
       }
     }
   },
-  mode: 'spa'
+  mode: 'spa',
+  plugins: ['~/plugins/auth0.js'],
+  auth0: {
+    domain: 'dev-27io6wsm.us.auth0.com',
+    clientID: 'HEUUDzyh9hOWLovP4hCBDyiJUnmStDHf'
+  }
 }
 
